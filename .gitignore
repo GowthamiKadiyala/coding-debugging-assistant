@@ -1,0 +1,36 @@
+# --- OS Files (Mac/Windows garbage) ---
+.DS_Store
+Thumbs.db
+
+# --- Python Backend ---
+# Virtual Environment (NEVER commit this)
+venv/
+.venv/
+env/
+
+# Python Bytecode
+__pycache__/
+*.py[cod]
+
+# Local Database (ChromaDB saves data here, we don't want to commit 1GB of vectors)
+chroma_db/
+
+# Testing Cache
+.pytest_cache/
+
+# --- VS Code Frontend ---
+# Node Dependencies (NEVER commit this)
+node_modules/
+
+# Build Outputs (Compiled JS files)
+out/
+dist/
+*.vsix
+
+# VS Code Test Artifacts
+.vscode-test/
+
+# --- SECURITY (CRITICAL) ---
+# Secrets and Keys
+.env
+.env.local
